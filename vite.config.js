@@ -7,4 +7,9 @@ export default defineConfig({
   server: {
     port: 8001,
   },
+  build: {
+    rollupOptions: {
+      external: ['react-datepicker']
+    }
+  }
 })
